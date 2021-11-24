@@ -19,8 +19,9 @@ namespace GUI_Main
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {/*
-                / Create the list to use as the custom source. 
+        {
+            try { 
+                // Create the list to use as the custom source. 
                 var source = new AutoCompleteStringCollection();
                 source.AddRange(new string[]
                                 {
@@ -52,8 +53,14 @@ namespace GUI_Main
                 };
 
                 // Add the text box to the form.
-                Controls.Add(textBox);
-                    */}
+                   Controls.Add(textBox);
+                }
+
+            catch { 
+            
+            
+            }
+        }
 
         private void buttoneu_Click(object sender, EventArgs e)
         {
@@ -103,6 +110,10 @@ namespace GUI_Main
                 MessageBox.Show("Please check your written informations for prescribes or mistakes, and click the button 'Ändern' again.");
             }
         }
-    
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

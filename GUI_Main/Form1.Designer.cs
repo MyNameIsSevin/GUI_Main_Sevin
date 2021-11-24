@@ -48,13 +48,17 @@ namespace GUI_Main
             this.textVorname = new System.Windows.Forms.TextBox();
             this.textEmailadresse = new System.Windows.Forms.TextBox();
             this.textName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textPasswort = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttoneu
             // 
-            this.buttoneu.Location = new System.Drawing.Point(13, 273);
+            this.buttoneu.Location = new System.Drawing.Point(10, 222);
+            this.buttoneu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttoneu.Name = "buttoneu";
-            this.buttoneu.Size = new System.Drawing.Size(75, 23);
+            this.buttoneu.Size = new System.Drawing.Size(56, 19);
             this.buttoneu.TabIndex = 0;
             this.buttoneu.Text = "Neu";
             this.buttoneu.UseVisualStyleBackColor = true;
@@ -62,9 +66,10 @@ namespace GUI_Main
             // 
             // buttonAendern
             // 
-            this.buttonAendern.Location = new System.Drawing.Point(356, 273);
+            this.buttonAendern.Location = new System.Drawing.Point(267, 222);
+            this.buttonAendern.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonAendern.Name = "buttonAendern";
-            this.buttonAendern.Size = new System.Drawing.Size(75, 23);
+            this.buttonAendern.Size = new System.Drawing.Size(56, 19);
             this.buttonAendern.TabIndex = 1;
             this.buttonAendern.Text = "Ändern";
             this.buttonAendern.UseVisualStyleBackColor = true;
@@ -72,9 +77,10 @@ namespace GUI_Main
             // 
             // buttonlöschen
             // 
-            this.buttonlöschen.Location = new System.Drawing.Point(714, 273);
+            this.buttonlöschen.Location = new System.Drawing.Point(536, 222);
+            this.buttonlöschen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonlöschen.Name = "buttonlöschen";
-            this.buttonlöschen.Size = new System.Drawing.Size(75, 23);
+            this.buttonlöschen.Size = new System.Drawing.Size(56, 19);
             this.buttonlöschen.TabIndex = 2;
             this.buttonlöschen.Text = "Löschen";
             this.buttonlöschen.UseVisualStyleBackColor = true;
@@ -83,136 +89,182 @@ namespace GUI_Main
             // labelKundennummer
             // 
             this.labelKundennummer.AutoSize = true;
-            this.labelKundennummer.Location = new System.Drawing.Point(41, 33);
+            this.labelKundennummer.Location = new System.Drawing.Point(31, 27);
+            this.labelKundennummer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelKundennummer.Name = "labelKundennummer";
-            this.labelKundennummer.Size = new System.Drawing.Size(108, 17);
+            this.labelKundennummer.Size = new System.Drawing.Size(81, 13);
             this.labelKundennummer.TabIndex = 4;
             this.labelKundennummer.Text = "Kundennummer";
             // 
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(41, 80);
+            this.labelName.Location = new System.Drawing.Point(31, 65);
+            this.labelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(45, 17);
+            this.labelName.Size = new System.Drawing.Size(35, 13);
             this.labelName.TabIndex = 5;
             this.labelName.Text = "Name";
             // 
             // labelStrasse
             // 
             this.labelStrasse.AutoSize = true;
-            this.labelStrasse.Location = new System.Drawing.Point(41, 125);
+            this.labelStrasse.Location = new System.Drawing.Point(31, 102);
+            this.labelStrasse.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelStrasse.Name = "labelStrasse";
-            this.labelStrasse.Size = new System.Drawing.Size(51, 17);
+            this.labelStrasse.Size = new System.Drawing.Size(38, 13);
             this.labelStrasse.TabIndex = 6;
             this.labelStrasse.Text = "Straße";
             // 
             // labelPLZ
             // 
             this.labelPLZ.AutoSize = true;
-            this.labelPLZ.Location = new System.Drawing.Point(41, 173);
+            this.labelPLZ.Location = new System.Drawing.Point(31, 141);
+            this.labelPLZ.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPLZ.Name = "labelPLZ";
-            this.labelPLZ.Size = new System.Drawing.Size(34, 17);
+            this.labelPLZ.Size = new System.Drawing.Size(27, 13);
             this.labelPLZ.TabIndex = 7;
             this.labelPLZ.Text = "PLZ";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(41, 217);
+            this.label6.Location = new System.Drawing.Point(31, 176);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 17);
+            this.label6.Size = new System.Drawing.Size(73, 13);
             this.label6.TabIndex = 8;
             this.label6.Text = "E-Mailadresse";
             // 
             // labelVorname
             // 
             this.labelVorname.AutoSize = true;
-            this.labelVorname.Location = new System.Drawing.Point(420, 80);
+            this.labelVorname.Location = new System.Drawing.Point(315, 65);
+            this.labelVorname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelVorname.Name = "labelVorname";
-            this.labelVorname.Size = new System.Drawing.Size(65, 17);
+            this.labelVorname.Size = new System.Drawing.Size(49, 13);
             this.labelVorname.TabIndex = 9;
             this.labelVorname.Text = "Vorname";
             // 
             // labelHausnummer
             // 
             this.labelHausnummer.AutoSize = true;
-            this.labelHausnummer.Location = new System.Drawing.Point(420, 125);
+            this.labelHausnummer.Location = new System.Drawing.Point(315, 102);
+            this.labelHausnummer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelHausnummer.Name = "labelHausnummer";
-            this.labelHausnummer.Size = new System.Drawing.Size(92, 17);
+            this.labelHausnummer.Size = new System.Drawing.Size(69, 13);
             this.labelHausnummer.TabIndex = 10;
             this.labelHausnummer.Text = "Hausnummer";
             // 
             // labelOrt
             // 
             this.labelOrt.AutoSize = true;
-            this.labelOrt.Location = new System.Drawing.Point(420, 173);
+            this.labelOrt.Location = new System.Drawing.Point(315, 141);
+            this.labelOrt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelOrt.Name = "labelOrt";
-            this.labelOrt.Size = new System.Drawing.Size(28, 17);
+            this.labelOrt.Size = new System.Drawing.Size(21, 13);
             this.labelOrt.TabIndex = 11;
             this.labelOrt.Text = "Ort";
             // 
             // textKundennummer
             // 
-            this.textKundennummer.Location = new System.Drawing.Point(173, 30);
+            this.textKundennummer.Location = new System.Drawing.Point(130, 24);
+            this.textKundennummer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textKundennummer.Name = "textKundennummer";
-            this.textKundennummer.Size = new System.Drawing.Size(152, 22);
+            this.textKundennummer.Size = new System.Drawing.Size(115, 20);
             this.textKundennummer.TabIndex = 12;
             // 
             // textStraße
             // 
-            this.textStraße.Location = new System.Drawing.Point(173, 122);
+            this.textStraße.Location = new System.Drawing.Point(130, 99);
+            this.textStraße.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textStraße.Name = "textStraße";
-            this.textStraße.Size = new System.Drawing.Size(152, 22);
+            this.textStraße.Size = new System.Drawing.Size(115, 20);
             this.textStraße.TabIndex = 13;
             // 
             // textPLZ
             // 
-            this.textPLZ.Location = new System.Drawing.Point(173, 170);
+            this.textPLZ.Location = new System.Drawing.Point(130, 138);
+            this.textPLZ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textPLZ.Name = "textPLZ";
-            this.textPLZ.Size = new System.Drawing.Size(152, 22);
+            this.textPLZ.Size = new System.Drawing.Size(115, 20);
             this.textPLZ.TabIndex = 14;
             // 
             // textOrt
             // 
-            this.textOrt.Location = new System.Drawing.Point(522, 170);
+            this.textOrt.Location = new System.Drawing.Point(392, 138);
+            this.textOrt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textOrt.Name = "textOrt";
-            this.textOrt.Size = new System.Drawing.Size(152, 22);
+            this.textOrt.Size = new System.Drawing.Size(115, 20);
             this.textOrt.TabIndex = 16;
             // 
             // textHausnummer
             // 
-            this.textHausnummer.Location = new System.Drawing.Point(586, 122);
+            this.textHausnummer.Location = new System.Drawing.Point(440, 99);
+            this.textHausnummer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textHausnummer.Name = "textHausnummer";
-            this.textHausnummer.Size = new System.Drawing.Size(88, 22);
+            this.textHausnummer.Size = new System.Drawing.Size(67, 20);
             this.textHausnummer.TabIndex = 17;
             // 
             // textVorname
             // 
-            this.textVorname.Location = new System.Drawing.Point(522, 77);
+            this.textVorname.Location = new System.Drawing.Point(392, 63);
+            this.textVorname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textVorname.Name = "textVorname";
-            this.textVorname.Size = new System.Drawing.Size(152, 22);
+            this.textVorname.Size = new System.Drawing.Size(115, 20);
             this.textVorname.TabIndex = 18;
             // 
             // textEmailadresse
             // 
-            this.textEmailadresse.Location = new System.Drawing.Point(173, 214);
+            this.textEmailadresse.Location = new System.Drawing.Point(130, 174);
+            this.textEmailadresse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textEmailadresse.Name = "textEmailadresse";
-            this.textEmailadresse.Size = new System.Drawing.Size(501, 22);
+            this.textEmailadresse.Size = new System.Drawing.Size(377, 20);
             this.textEmailadresse.TabIndex = 19;
             // 
             // textName
             // 
-            this.textName.Location = new System.Drawing.Point(173, 77);
+            this.textName.Location = new System.Drawing.Point(130, 63);
+            this.textName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textName.Name = "textName";
-            this.textName.Size = new System.Drawing.Size(152, 22);
+            this.textName.Size = new System.Drawing.Size(115, 20);
             this.textName.TabIndex = 20;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(315, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 13);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Passwort";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // textPasswort
+            // 
+            this.textPasswort.Location = new System.Drawing.Point(392, 24);
+            this.textPasswort.Margin = new System.Windows.Forms.Padding(2);
+            this.textPasswort.Name = "textPasswort";
+            this.textPasswort.Size = new System.Drawing.Size(115, 20);
+            this.textPasswort.TabIndex = 23;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 308);
+            this.ClientSize = new System.Drawing.Size(600, 250);
+            this.Controls.Add(this.textPasswort);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textName);
             this.Controls.Add(this.textEmailadresse);
             this.Controls.Add(this.textVorname);
@@ -232,6 +284,7 @@ namespace GUI_Main
             this.Controls.Add(this.buttonlöschen);
             this.Controls.Add(this.buttonAendern);
             this.Controls.Add(this.buttoneu);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -261,6 +314,9 @@ namespace GUI_Main
         private System.Windows.Forms.TextBox textVorname;
         private System.Windows.Forms.TextBox textEmailadresse;
         private System.Windows.Forms.TextBox textName;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textPasswort;
     }
 }
 
