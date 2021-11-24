@@ -11,12 +11,18 @@ using System.Xml.Linq;
 
 namespace GUI_Main
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form,GUI_Main.IModel.IModel
     {
+        List<Kunde> IModel.IModel.Kunden => throw new NotImplementedException();
+
+        XDocument IModel.IModel.doc => throw new NotImplementedException();
+
         public Form1()
         {
             InitializeComponent();
         }
+
+        XDocument doc { get; }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -84,7 +90,7 @@ namespace GUI_Main
             }
             else
             {
-                MessageBox.Show("Please check your written informations for prescribes or mistakes, and click please neu again");
+                MessageBox.Show("Please check your written informations for prescribes or mistakes, and click please |neu| again");
             }
         }
 
@@ -120,6 +126,26 @@ namespace GUI_Main
         private void textPasswort_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        void IModel.IModel.alter(Kunde kunde)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IModel.IModel.delete(Kunde kunde)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IModel.IModel.save(Kunde kunde)
+        {
+            throw new NotImplementedException();
+        }
+
+        Kunde IModel.IModel.getKunde(int kundennummer)
+        {
+            throw new NotImplementedException();
         }
     }
 }
