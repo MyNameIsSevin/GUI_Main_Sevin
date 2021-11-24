@@ -71,12 +71,13 @@ namespace GUI_Main
                 doc.Element("Kundenliste").Add(new XElement("Kunde",
                    new XElement("Kundennummer", textKundennummer.Text),
                    new XElement("Name", textName.Text),
-                   new XElement("Name", textVorname.Text),
-                   new XElement("Name", textStraße.Text),
-                   new XElement("Name", textHausnummer.Text),
-                   new XElement("Name", textPLZ.Text),
-                   new XElement("Name", textOrt.Text),
-                   new XElement("Name", textEmailadresse.Text)
+                   new XElement("Vorname", textVorname.Text),
+                   new XElement("Straße", textStraße.Text),
+                   new XElement("Hausnummer", textHausnummer.Text),
+                   new XElement("PLZ", textPLZ.Text),
+                   new XElement("Ort", textOrt.Text),
+                   new XElement("Emailadresse", textEmailadresse.Text),
+                   new XElement("Passwort", textPasswort.Text)
                    ));
 
                 MessageBox.Show("Successfully added a new member!");
@@ -112,6 +113,11 @@ namespace GUI_Main
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textPasswort_TextChanged(object sender, EventArgs e)
         {
 
         }

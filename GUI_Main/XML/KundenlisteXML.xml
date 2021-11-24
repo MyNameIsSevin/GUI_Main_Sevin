@@ -44,6 +44,7 @@
     <email>Almannklagtalleweg@gmail.com</email>
     <passwort>Anzeigegehtraus</passwort>
     </Kunde>
+	<Kunde>
     <Kundennummer>386</Kundennummer>
     <name>Franz</name>
     <vorname>Ri-kru-tyen</vorname>
@@ -54,7 +55,7 @@
     <email>Zerspieltalleweg@gmail.com</email>
     <passwort>AllesaufGrün</passwort>
     </Kunde>
-      </Kunde>
+	<Kunde>
     <Kundennummer>67</Kundennummer>
     <name>Robert</name>
     <vorname>Neuer</vorname>

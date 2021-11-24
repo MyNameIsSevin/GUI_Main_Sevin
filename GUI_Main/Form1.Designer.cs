@@ -256,6 +256,7 @@ namespace GUI_Main
             this.textPasswort.Name = "textPasswort";
             this.textPasswort.Size = new System.Drawing.Size(115, 20);
             this.textPasswort.TabIndex = 23;
+            this.textPasswort.TextChanged += new System.EventHandler(this.textPasswort_TextChanged);
             // 
             // Form1
             // 
