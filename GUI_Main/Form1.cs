@@ -24,25 +24,17 @@ namespace GUI_Main
 
         XDocument doc { get; }
 
+       // XDocument doc { set; }
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            try { 
+           
                 // Create the list to use as the custom source. 
                 var source = new AutoCompleteStringCollection();
                 source.AddRange(new string[]
                                 {
-                        "January",
-                        "February",
-                        "March",
-                        "April",
-                        "May",
-                        "June",
-                        "July",
-                        "August",
-                        "September",
-                        "October",
-                        "November",
-                        "December"
+                    //Name (List)
+                    //Nachname (List)
                                 });
 
                 // Create and initialize the text box.
@@ -58,14 +50,13 @@ namespace GUI_Main
                     Visible = true
                 };
 
-                // Add the text box to the form.
-                   Controls.Add(textBox);
-                }
+                
+                
 
-            catch { 
+          
             
             
-            }
+            
         }
 
         private void buttoneu_Click(object sender, EventArgs e)
@@ -96,8 +87,16 @@ namespace GUI_Main
 
         private void buttonlöschen_Click(object sender, EventArgs e)
         {
-            doc.Descendants("Kundenliste").Where(o => o.Attribute("Kundennummer").Value == "5 
-            && o.Element("Kundenliste").Element("Name").Value == "DerBeispielname").remove();
+            doc.Descendants("Kundenliste").Where(o => o.Attribute("Kundennummer").Value = textKundennummer.Text
+            && o.Element("Kundenliste").Element("Name").Value == textName.Text)
+            && o.Element("Kundenliste").Element("Vorname").Value == textVorname.Text)
+            && o.Element("Kundenliste").Element("Straße").Value == textStraße.Text)
+            && o.Element("Kundenliste").Element("Hausnummer").Value == textHausnummer.Text)
+            && o.Element("Kundenliste").Element("PLZ").Value == textPLZ.Text)
+            && o.Element("Kundenliste").Element("Ort").Value == textOrt.Text)
+            && o.Element("Kundenliste").Element("Emailadresse").Value == textEmailadresse.Text)
+            && o.Element("Kundenliste").Element("Passwort").Value == textPasswort.te).remove();
+
         }
 
         private void buttonAendern_Click(object sender, EventArgs e)
@@ -108,8 +107,17 @@ namespace GUI_Main
             {
 
 
-                doc.Descendants("Kundenliste").Where(o => o.Attribute("Kundennummer").Value == "5 
-                && o.Element("Kundenliste").Element("Name").Value ="DerTestName").First().Value=textName;
+                doc.Descendants("Kundenliste").Where(o => o.Attribute("Kundennummer").Value = textKundennummer.Text
+                && o.Element("Kundenliste").Element("Name").Value = textName.Text)First().Value = textName.Text
+                && o.Element("Kundenliste").Element("Vorname").Value = textVorname.Text.First().Value = textVorname.Text
+                && o.Element("Kundenliste").Element("Straße").Value = textStraße.Text.First().Value = textStraße.Text
+                && o.Element("Kundenliste").Element("Hausnummer").Value = textHausnummer.Text.First().Value = textHausnummer.Text
+                && o.Element("Kundenliste").Element("PLZ").Value = textPLZ.Text.First().Value = textPLZ.Text
+                && o.Element("Kundenliste").Element("Ort").Value = textOrt.Text.First().Value = textOrt.Text
+                && o.Element("Kundenliste").Element("Emailadresse").Value = textEmailadresse.Text.First().Value = textEmailadresse.Text
+                && o.Element("Kundenliste").Element("Passwort").Value = textPasswort.Text).First().Value = textPasswort.Text;
+
+
                 MessageBox.Show("Successfully changed the data of a member!");
             }
             else
