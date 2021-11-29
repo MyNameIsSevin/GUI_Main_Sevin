@@ -107,16 +107,21 @@ namespace GUI_Main
             {
 
 
-                doc.Descendants("Kundenliste").Where(o => o.Attribute("Kundennummer").Value = textKundennummer.Text
-                && o.Element("Kundenliste").Element("Name").Value = textName.Text)First().Value = textName.Text
-                && o.Element("Kundenliste").Element("Vorname").Value = textVorname.Text.First().Value = textVorname.Text
-                && o.Element("Kundenliste").Element("Straße").Value = textStraße.Text.First().Value = textStraße.Text
-                && o.Element("Kundenliste").Element("Hausnummer").Value = textHausnummer.Text.First().Value = textHausnummer.Text
-                && o.Element("Kundenliste").Element("PLZ").Value = textPLZ.Text.First().Value = textPLZ.Text
-                && o.Element("Kundenliste").Element("Ort").Value = textOrt.Text.First().Value = textOrt.Text
-                && o.Element("Kundenliste").Element("Emailadresse").Value = textEmailadresse.Text.First().Value = textEmailadresse.Text
-                && o.Element("Kundenliste").Element("Passwort").Value = textPasswort.Text).First().Value = textPasswort.Text;
-
+                foreach (XElement el in doc.Descendants("Kunde").
+                    Where(o => o.Attribute("Kundennummer").Value
+                            == textKundennummer.Text))
+                {
+                    //el.Value = textName.Text;
+                    el.Element("Vorname").Value = textVorname.Text;
+                    /*
+                    el.Element("Straße").Value = textStraße.Text.First().Value = textStraße.Text;
+                    el.Element("Hausnummer").Value = textHausnummer.Text.First().Value = textHausnummer.Text;
+                    el.Element("PLZ").Value = textPLZ.Text.First().Value = textPLZ.Text;
+                    el.Element("Ort").Value = textOrt.Text.First().Value = textOrt.Text;
+                    el.Element("Kundenliste").Element("Emailadresse").Value = textEmailadresse.Text.First().Value = textEmailadresse.Text;
+                                el.Element("Kundenliste").Element("Passwort").Value = textPasswort.Text).First().Value = textPasswort.Text;
+                    */ //
+                }
 
                 MessageBox.Show("Successfully changed the data of a member!");
             }
