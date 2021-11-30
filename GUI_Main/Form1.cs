@@ -91,17 +91,16 @@ namespace GUI_Main
                   && String.IsNullOrEmpty(textStraße.Text) && String.IsNullOrEmpty(textHausnummer.Text) && String.IsNullOrEmpty(textPLZ.Text)
                   && String.IsNullOrEmpty(textOrt.Text) && String.IsNullOrEmpty(textEmailadresse.Text))
             {
-                foreach (
-                    doc.Descendants("Kunden").Where(o => o.Attribute("Kundennummer").Value = textKundennummer.Text))
+                foreach (XElement el in doc.Descendants("Kunden").Where(o => o.Attribute("Kundennummer").Value == textKundennummer.Text))
                 {
                     el.Element("Name").Value == textName.Text).Remove();
-                    el.Element("Vorname").Value == textVorname.Text).remove();
-                    el.Element("Straße").Value == textStraße.Text).remove();
-                    el.Element("Hausnummer").Value == textHausnummer.Text).remove();
-                    el.Element("PLZ").Value == textPLZ.Text).remove();
-                    el.Element("Ort").Value == textOrt.Text).remove();
-                    el.Element("Emailadresse").Value == textEmailadresse.Text).remove();
-                    el.Element("Passwort").Value == textPasswort.Text).remove();
+                    el.Element("Vorname").Value == textVorname.Text).Remove();
+                    el.Element("Straße").Value == textStraße.Text).Remove();
+                    el.Element("Hausnummer").Value == textHausnummer.Text).Remove();
+                    el.Element("PLZ").Value == textPLZ.Text).Remove();
+                    el.Element("Ort").Value == textOrt.Text).Remove();
+                    el.Element("Emailadresse").Value == textEmailadresse.Text).Remove();
+                    el.Element("Passwort").Value == textPasswort.Text).Remove();
 
                     MessageBox.Show("Successfully removed an Member");
                 }
