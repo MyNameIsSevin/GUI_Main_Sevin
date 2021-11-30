@@ -87,16 +87,29 @@ namespace GUI_Main
 
         private void buttonlöschen_Click(object sender, EventArgs e)
         {
-            doc.Descendants("Kundenliste").Where(o => o.Attribute("Kundennummer").Value = textKundennummer.Text
-            && o.Element("Kundenliste").Element("Name").Value == textName.Text)
-            && o.Element("Kundenliste").Element("Vorname").Value == textVorname.Text)
-            && o.Element("Kundenliste").Element("Straße").Value == textStraße.Text)
-            && o.Element("Kundenliste").Element("Hausnummer").Value == textHausnummer.Text)
-            && o.Element("Kundenliste").Element("PLZ").Value == textPLZ.Text)
-            && o.Element("Kundenliste").Element("Ort").Value == textOrt.Text)
-            && o.Element("Kundenliste").Element("Emailadresse").Value == textEmailadresse.Text)
-            && o.Element("Kundenliste").Element("Passwort").Value == textPasswort.te).remove();
+            if (String.IsNullOrEmpty(textKundennummer.Text) && String.IsNullOrEmpty(textName.Text) && String.IsNullOrEmpty(textVorname.Text)
+                  && String.IsNullOrEmpty(textStraße.Text) && String.IsNullOrEmpty(textHausnummer.Text) && String.IsNullOrEmpty(textPLZ.Text)
+                  && String.IsNullOrEmpty(textOrt.Text) && String.IsNullOrEmpty(textEmailadresse.Text))
+            {
+                foreach (
+                    doc.Descendants("Kunden").Where(o => o.Attribute("Kundennummer").Value = textKundennummer.Text))
+                {
+                    el.Element("Name").Value == textName.Text).Remove();
+                    el.Element("Vorname").Value == textVorname.Text).remove();
+                    el.Element("Straße").Value == textStraße.Text).remove();
+                    el.Element("Hausnummer").Value == textHausnummer.Text).remove();
+                    el.Element("PLZ").Value == textPLZ.Text).remove();
+                    el.Element("Ort").Value == textOrt.Text).remove();
+                    el.Element("Emailadresse").Value == textEmailadresse.Text).remove();
+                    el.Element("Passwort").Value == textPasswort.Text).remove();
 
+                    MessageBox.Show("Successfully removed an Member");
+                }
+            }
+            else 
+            {
+                MessageBox.Show("Please check your written informations for prescribes or mistakes, and click the button 'Löschen' again.");
+            }
         }
 
         private void buttonAendern_Click(object sender, EventArgs e)
@@ -113,14 +126,14 @@ namespace GUI_Main
                 {
                     //el.Value = textName.Text;
                     el.Element("Vorname").Value = textVorname.Text;
-                    /*
-                    el.Element("Straße").Value = textStraße.Text.First().Value = textStraße.Text;
-                    el.Element("Hausnummer").Value = textHausnummer.Text.First().Value = textHausnummer.Text;
-                    el.Element("PLZ").Value = textPLZ.Text.First().Value = textPLZ.Text;
-                    el.Element("Ort").Value = textOrt.Text.First().Value = textOrt.Text;
-                    el.Element("Kundenliste").Element("Emailadresse").Value = textEmailadresse.Text.First().Value = textEmailadresse.Text;
-                                el.Element("Kundenliste").Element("Passwort").Value = textPasswort.Text).First().Value = textPasswort.Text;
-                    */ //
+                    el.Element("Name").Value = textName.Text;
+                    el.Element("Straße").Value = textStraße.Text;
+                    el.Element("Hausnummer").Value = textHausnummer.Text;
+                    el.Element("PLZ").Value = textPLZ.Text;
+                    el.Element("Ort").Value = textOrt.Text;
+                    el.Element("Emailadresse").Value = textEmailadresse.Text;
+                    el.Element("Passwort").Value = textPasswort.Text;
+                    
                 }
 
                 MessageBox.Show("Successfully changed the data of a member!");
