@@ -13,7 +13,7 @@ namespace GUI_Main.Model
 
         List<Kunde> IModel.IModel.Kunden => throw new NotImplementedException();
 
-        XDocument IModel.IModel.doc => doc;
+        XDocument IModel.IModel.doc { get => doc; set => doc = value; }
 
         void IModel.IModel.alter(Kunde kunde)
         {

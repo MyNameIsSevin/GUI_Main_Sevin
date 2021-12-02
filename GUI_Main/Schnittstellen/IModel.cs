@@ -15,7 +15,7 @@ namespace GUI_Main.IModel
         void save(Kunde kunde);
         Kunde getKunde(int kundennummer);
 
-        XDocument doc { get; }
+        XDocument doc { get; set; }
     }    
     
 }

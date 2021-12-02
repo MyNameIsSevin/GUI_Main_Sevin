@@ -40,23 +40,23 @@ namespace GUI_Main
             this.labelVorname = new System.Windows.Forms.Label();
             this.labelHausnummer = new System.Windows.Forms.Label();
             this.labelOrt = new System.Windows.Forms.Label();
-            this.textKundennummer = new System.Windows.Forms.TextBox();
-            this.textStraße = new System.Windows.Forms.TextBox();
-            this.textPLZ = new System.Windows.Forms.TextBox();
-            this.textOrt = new System.Windows.Forms.TextBox();
-            this.textHausnummer = new System.Windows.Forms.TextBox();
-            this.textVorname = new System.Windows.Forms.TextBox();
-            this.textEmailadresse = new System.Windows.Forms.TextBox();
-            this.textName = new System.Windows.Forms.TextBox();
+            this.textboxKundennummer = new System.Windows.Forms.TextBox();
+            this.textboxStraße = new System.Windows.Forms.TextBox();
+            this.textboxPLZ = new System.Windows.Forms.TextBox();
+            this.textboxOrt = new System.Windows.Forms.TextBox();
+            this.textboxHausnummer = new System.Windows.Forms.TextBox();
+            this.textboxVorname = new System.Windows.Forms.TextBox();
+            this.textboxEmailadresse = new System.Windows.Forms.TextBox();
+            this.textboxName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textPasswort = new System.Windows.Forms.TextBox();
+            this.textboxPasswort = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttoneu
             // 
             this.buttoneu.Location = new System.Drawing.Point(10, 222);
-            this.buttoneu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttoneu.Margin = new System.Windows.Forms.Padding(2);
             this.buttoneu.Name = "buttoneu";
             this.buttoneu.Size = new System.Drawing.Size(56, 19);
             this.buttoneu.TabIndex = 0;
@@ -67,7 +67,7 @@ namespace GUI_Main
             // buttonAendern
             // 
             this.buttonAendern.Location = new System.Drawing.Point(267, 222);
-            this.buttonAendern.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAendern.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAendern.Name = "buttonAendern";
             this.buttonAendern.Size = new System.Drawing.Size(56, 19);
             this.buttonAendern.TabIndex = 1;
@@ -78,7 +78,7 @@ namespace GUI_Main
             // buttonlöschen
             // 
             this.buttonlöschen.Location = new System.Drawing.Point(536, 222);
-            this.buttonlöschen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonlöschen.Margin = new System.Windows.Forms.Padding(2);
             this.buttonlöschen.Name = "buttonlöschen";
             this.buttonlöschen.Size = new System.Drawing.Size(56, 19);
             this.buttonlöschen.TabIndex = 2;
@@ -166,69 +166,70 @@ namespace GUI_Main
             this.labelOrt.TabIndex = 11;
             this.labelOrt.Text = "Ort";
             // 
-            // textKundennummer
+            // textboxKundennummer
             // 
-            this.textKundennummer.Location = new System.Drawing.Point(130, 24);
-            this.textKundennummer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textKundennummer.Name = "textKundennummer";
-            this.textKundennummer.Size = new System.Drawing.Size(115, 20);
-            this.textKundennummer.TabIndex = 12;
+            this.textboxKundennummer.Location = new System.Drawing.Point(130, 24);
+            this.textboxKundennummer.Margin = new System.Windows.Forms.Padding(2);
+            this.textboxKundennummer.Name = "textboxKundennummer";
+            this.textboxKundennummer.Size = new System.Drawing.Size(115, 20);
+            this.textboxKundennummer.TabIndex = 12;
             // 
-            // textStraße
+            // textboxStraße
             // 
-            this.textStraße.Location = new System.Drawing.Point(130, 99);
-            this.textStraße.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textStraße.Name = "textStraße";
-            this.textStraße.Size = new System.Drawing.Size(115, 20);
-            this.textStraße.TabIndex = 13;
+            this.textboxStraße.Location = new System.Drawing.Point(130, 99);
+            this.textboxStraße.Margin = new System.Windows.Forms.Padding(2);
+            this.textboxStraße.Name = "textboxStraße";
+            this.textboxStraße.Size = new System.Drawing.Size(115, 20);
+            this.textboxStraße.TabIndex = 13;
             // 
-            // textPLZ
+            // textboxPLZ
             // 
-            this.textPLZ.Location = new System.Drawing.Point(130, 138);
-            this.textPLZ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textPLZ.Name = "textPLZ";
-            this.textPLZ.Size = new System.Drawing.Size(115, 20);
-            this.textPLZ.TabIndex = 14;
+            this.textboxPLZ.Location = new System.Drawing.Point(130, 138);
+            this.textboxPLZ.Margin = new System.Windows.Forms.Padding(2);
+            this.textboxPLZ.Name = "textboxPLZ";
+            this.textboxPLZ.Size = new System.Drawing.Size(115, 20);
+            this.textboxPLZ.TabIndex = 14;
             // 
-            // textOrt
+            // textboxOrt
             // 
-            this.textOrt.Location = new System.Drawing.Point(392, 138);
-            this.textOrt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textOrt.Name = "textOrt";
-            this.textOrt.Size = new System.Drawing.Size(115, 20);
-            this.textOrt.TabIndex = 16;
+            this.textboxOrt.Location = new System.Drawing.Point(392, 138);
+            this.textboxOrt.Margin = new System.Windows.Forms.Padding(2);
+            this.textboxOrt.Name = "textboxOrt";
+            this.textboxOrt.Size = new System.Drawing.Size(115, 20);
+            this.textboxOrt.TabIndex = 16;
             // 
-            // textHausnummer
+            // textboxHausnummer
             // 
-            this.textHausnummer.Location = new System.Drawing.Point(440, 99);
-            this.textHausnummer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textHausnummer.Name = "textHausnummer";
-            this.textHausnummer.Size = new System.Drawing.Size(67, 20);
-            this.textHausnummer.TabIndex = 17;
+            this.textboxHausnummer.Location = new System.Drawing.Point(440, 99);
+            this.textboxHausnummer.Margin = new System.Windows.Forms.Padding(2);
+            this.textboxHausnummer.Name = "textboxHausnummer";
+            this.textboxHausnummer.Size = new System.Drawing.Size(67, 20);
+            this.textboxHausnummer.TabIndex = 17;
+            this.textboxHausnummer.TextChanged += new System.EventHandler(this.textboxHausnummer_TextChanged);
             // 
-            // textVorname
+            // textboxVorname
             // 
-            this.textVorname.Location = new System.Drawing.Point(392, 63);
-            this.textVorname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textVorname.Name = "textVorname";
-            this.textVorname.Size = new System.Drawing.Size(115, 20);
-            this.textVorname.TabIndex = 18;
+            this.textboxVorname.Location = new System.Drawing.Point(392, 63);
+            this.textboxVorname.Margin = new System.Windows.Forms.Padding(2);
+            this.textboxVorname.Name = "textboxVorname";
+            this.textboxVorname.Size = new System.Drawing.Size(115, 20);
+            this.textboxVorname.TabIndex = 18;
             // 
-            // textEmailadresse
+            // textboxEmailadresse
             // 
-            this.textEmailadresse.Location = new System.Drawing.Point(130, 174);
-            this.textEmailadresse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textEmailadresse.Name = "textEmailadresse";
-            this.textEmailadresse.Size = new System.Drawing.Size(377, 20);
-            this.textEmailadresse.TabIndex = 19;
+            this.textboxEmailadresse.Location = new System.Drawing.Point(130, 174);
+            this.textboxEmailadresse.Margin = new System.Windows.Forms.Padding(2);
+            this.textboxEmailadresse.Name = "textboxEmailadresse";
+            this.textboxEmailadresse.Size = new System.Drawing.Size(377, 20);
+            this.textboxEmailadresse.TabIndex = 19;
             // 
-            // textName
+            // textboxName
             // 
-            this.textName.Location = new System.Drawing.Point(130, 63);
-            this.textName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textName.Name = "textName";
-            this.textName.Size = new System.Drawing.Size(115, 20);
-            this.textName.TabIndex = 20;
+            this.textboxName.Location = new System.Drawing.Point(130, 63);
+            this.textboxName.Margin = new System.Windows.Forms.Padding(2);
+            this.textboxName.Name = "textboxName";
+            this.textboxName.Size = new System.Drawing.Size(115, 20);
+            this.textboxName.TabIndex = 20;
             // 
             // label1
             // 
@@ -249,31 +250,31 @@ namespace GUI_Main
             this.label2.Text = "Passwort";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textPasswort
+            // textboxPasswort
             // 
-            this.textPasswort.Location = new System.Drawing.Point(392, 24);
-            this.textPasswort.Margin = new System.Windows.Forms.Padding(2);
-            this.textPasswort.Name = "textPasswort";
-            this.textPasswort.Size = new System.Drawing.Size(115, 20);
-            this.textPasswort.TabIndex = 23;
-            this.textPasswort.TextChanged += new System.EventHandler(this.textPasswort_TextChanged);
+            this.textboxPasswort.Location = new System.Drawing.Point(392, 24);
+            this.textboxPasswort.Margin = new System.Windows.Forms.Padding(2);
+            this.textboxPasswort.Name = "textboxPasswort";
+            this.textboxPasswort.Size = new System.Drawing.Size(115, 20);
+            this.textboxPasswort.TabIndex = 23;
+            this.textboxPasswort.TextChanged += new System.EventHandler(this.textPasswort_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 250);
-            this.Controls.Add(this.textPasswort);
+            this.Controls.Add(this.textboxPasswort);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textName);
-            this.Controls.Add(this.textEmailadresse);
-            this.Controls.Add(this.textVorname);
-            this.Controls.Add(this.textHausnummer);
-            this.Controls.Add(this.textOrt);
-            this.Controls.Add(this.textPLZ);
-            this.Controls.Add(this.textStraße);
-            this.Controls.Add(this.textKundennummer);
+            this.Controls.Add(this.textboxName);
+            this.Controls.Add(this.textboxEmailadresse);
+            this.Controls.Add(this.textboxVorname);
+            this.Controls.Add(this.textboxHausnummer);
+            this.Controls.Add(this.textboxOrt);
+            this.Controls.Add(this.textboxPLZ);
+            this.Controls.Add(this.textboxStraße);
+            this.Controls.Add(this.textboxKundennummer);
             this.Controls.Add(this.labelOrt);
             this.Controls.Add(this.labelHausnummer);
             this.Controls.Add(this.labelVorname);
@@ -285,7 +286,7 @@ namespace GUI_Main
             this.Controls.Add(this.buttonlöschen);
             this.Controls.Add(this.buttonAendern);
             this.Controls.Add(this.buttoneu);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -307,17 +308,17 @@ namespace GUI_Main
         private System.Windows.Forms.Label labelVorname;
         private System.Windows.Forms.Label labelHausnummer;
         private System.Windows.Forms.Label labelOrt;
-        private System.Windows.Forms.TextBox textKundennummer;
-        private System.Windows.Forms.TextBox textStraße;
-        private System.Windows.Forms.TextBox textPLZ;
-        private System.Windows.Forms.TextBox textOrt;
-        private System.Windows.Forms.TextBox textHausnummer;
-        private System.Windows.Forms.TextBox textVorname;
-        private System.Windows.Forms.TextBox textEmailadresse;
-        private System.Windows.Forms.TextBox textName;
+        private System.Windows.Forms.TextBox textboxKundennummer;
+        private System.Windows.Forms.TextBox textboxStraße;
+        private System.Windows.Forms.TextBox textboxPLZ;
+        private System.Windows.Forms.TextBox textboxOrt;
+        private System.Windows.Forms.TextBox textboxHausnummer;
+        private System.Windows.Forms.TextBox textboxVorname;
+        private System.Windows.Forms.TextBox textboxEmailadresse;
+        private System.Windows.Forms.TextBox textboxName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textPasswort;
+        private System.Windows.Forms.TextBox textboxPasswort;
     }
 }
 
