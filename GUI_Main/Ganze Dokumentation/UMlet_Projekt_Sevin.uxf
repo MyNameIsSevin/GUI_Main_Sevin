@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>260</y>
+      <w>210</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>_&lt;&lt;&lt;Interface&gt;&gt;&gt;_
+Ikundeliste
+-
++set kunde (Kunde neukunde)
++lösche Kunde ()
++änder Kunde ()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>440</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>_Kundeliste_
+--
+Kunden: liste &lt;Kunden&gt;
++Kundenliste
++set kunde (Kunde neukunde)
++lösche Kunde ()
++änder Kunde ()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>890</x>
+      <y>440</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>_Kunde_
+--
+Kundennummer: INT
+Vorname: String
+Name: String
+Straße: String
+Ort: String
+Postleitzahl: Int</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

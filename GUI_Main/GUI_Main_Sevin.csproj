@@ -76,6 +76,7 @@
     <None Include="Ganze Dokumentation\Lastenheft_Sevin.docx" />
     <None Include="Ganze Dokumentation\PAP_sevin.pap" />
     <None Include="Ganze Dokumentation\Pflichtenheft_Sevin.docx" />
+    <None Include="Ganze Dokumentation\UMlet_Projekt_Sevin.uxf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
