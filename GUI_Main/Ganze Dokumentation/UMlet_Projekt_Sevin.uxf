@@ -12,9 +12,9 @@
     <panel_attributes>_&lt;&lt;&lt;Interface&gt;&gt;&gt;_
 Ikundeliste
 -
-+set kunde (Kunde neukunde)
-+lösche Kunde ()
-+änder Kunde ()
++add kunde (Kunde neukunde)
++delete Kunde ()
++alter Kunde ()
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -30,9 +30,9 @@ Ikundeliste
 --
 Kunden: liste &lt;Kunden&gt;
 +Kundenliste
-+set kunde (Kunde neukunde)
-+lösche Kunde ()
-+änder Kunde ()</panel_attributes>
++add kunde (Kunde neukunde)
++delete Kunde ()
++alter Kunde ()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -41,16 +41,19 @@ Kunden: liste &lt;Kunden&gt;
       <x>890</x>
       <y>440</y>
       <w>210</w>
-      <h>150</h>
+      <h>220</h>
     </coordinates>
     <panel_attributes>_Kunde_
 --
 Kundennummer: INT
-Vorname: String
 Name: String
+Vorname: String
 Straße: String
+Hausnummer: INT
 Ort: String
-Postleitzahl: Int</panel_attributes>
+Postleitzahl: Int
+Email: String
+Passwort: String</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
