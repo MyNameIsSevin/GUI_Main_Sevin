@@ -50,11 +50,6 @@ namespace GUI_Main
                 Width = ClientRectangle.Width - 40,
                 Visible = true
             };
-            //--
-            textboxKundennummer.Text = "2";
-            textboxName.Text = "Nagy";
-            textboxVorname.Text = "asd";
-            textboxStraße.Text = "asd2";
         }
 
         private void buttoneu_Click(object sender, EventArgs e) //Funct

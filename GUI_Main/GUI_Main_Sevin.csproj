@@ -72,6 +72,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Ganze Dokumentation\Gantdiagramm_neu_Sevin.xlsx" />
     <None Include="Ganze Dokumentation\HHBK_Chemicals_Projektstrukturplan_Sevin.xlsx" />
     <None Include="Ganze Dokumentation\Lastenheft_Sevin.docx" />
     <None Include="Ganze Dokumentation\PAP_sevin.pap" />
