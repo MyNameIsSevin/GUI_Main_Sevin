@@ -1,9 +1,7 @@
 ﻿using GUI_Main.Schnittstellen;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace GUI_Main.Controller
 {
