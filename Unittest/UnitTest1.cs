@@ -17,20 +17,36 @@ namespace Unittest
     [TestClass]
     public class UnitTest1
     {
-        
+        #region helper
         string _path = @"C:\Users\sevre\Source\Repos\MyNameIsSevin\GUI_Main_Sevin\GUI_Main\XML\KundenlisteXML.xml";
-        //GUI_Main.IModel.IModel myform;
+        //string _path = @"C:\Users\KRIShark\Source\Repos\GUI_Main_Sevin\GUI_Main\XML\KundenlisteXML.xml";
+        GUI_Main.IModel.IModel model;
+
+
+        #endregion
         public UnitTest1()
         {
-            myform = new GUI_Main.Form1();
+            model = new GUI_Main.Model.Model();
+
         }
-      
+
 
         [TestMethod]
         public void Testalter()
         {
             XDocument doc = XDocument.Load(_path);
-           
+            Kunde neueKunde = new Kunde(
+                100,
+                "NameTest",
+                "VornameTest",
+                "StasseTest",
+                "HausnummerTest",
+                "OrtTest",
+                1111,
+                "EmailTest@e.com",
+                ""
+                );
+            model.alter(neueKunde);
 
         }
         [TestMethod]
@@ -46,46 +62,28 @@ namespace Unittest
         {
             XDocument doc = XDocument.Load(_path);
 
+            Kunde neueKunde = new Kunde(
+                100,
+                "NameTest",
+                "VornameTest",
+                "StasseTest",
+                "HausnummerTest",
+                "OrtTest",
+                1111,
+                "EmailTest@e.com",
+                "asd"
+                );
+            model.save(neueKunde);
 
+            XDocument docAfter = XDocument.Load(_path);
 
-
-
-        /*
-
-            textboxKundennummer = 4;
-            textboxName = De_Santa;
-            textboxVorname = Michael;
-            textboxStraﬂe = Los_Santosstr;
-            textboxHausnummer = 4;
-            textboxPLZ = 42131;
-            textboxOrt = Hood;
-            textboxEmailadresse = MichaelFBI@gmai.com;
-            textboxPasswort = MoneyMoney;
-
-
-            doc.Element("Kundenliste").Add(new XElement("Kunde",
-                  new XElement("Kundennummer", textboxKundennummer.Text),
-                  new XElement("name", textboxName.Text),
-                  new XElement("vorname", textboxVorname.Text),
-                  new XElement("straﬂe", textboxStraﬂe.Text),
-                  new XElement("hausnummer", textboxHausnummer.Text),
-                  new XElement("postleitzahl", textboxPLZ.Text),
-                  new XElement("ort", textboxOrt.Text),
-                  new XElement("email", textboxEmailadresse.Text),
-                  new XElement("passwort", textboxPasswort.Text)
-                  ));
-
-
-            */
+            Assert.IsTrue(true);
 
         }
         [TestMethod]
         public void Testgetkunde()
         {
             XDocument doc = XDocument.Load(_path);
-
-
-
         }
     }
 }

@@ -18,7 +18,7 @@ namespace GUI_Main
         private string emailadresse;
         private string passwort;
 
-        public Kunde(int kundennummer, string name, string vorname, string strasse, string hausnummer, string ort, int postleitzahl, string emailadresse)
+        public Kunde(int kundennummer, string name, string vorname, string strasse, string hausnummer, string ort, int postleitzahl, string emailadresse, string passwort)
         {
             this.kundennummer = kundennummer;
             this.Name = name;
@@ -28,6 +28,7 @@ namespace GUI_Main
             this.Ort = ort;
             this.postleitzahl = postleitzahl;
             this.emailadresse = emailadresse;
+            this.passwort = passwort;
         }
 
         public Kunde() { }

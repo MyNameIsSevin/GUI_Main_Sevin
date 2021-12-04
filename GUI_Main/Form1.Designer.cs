@@ -205,7 +205,6 @@ namespace GUI_Main
             this.textboxHausnummer.Name = "textboxHausnummer";
             this.textboxHausnummer.Size = new System.Drawing.Size(67, 20);
             this.textboxHausnummer.TabIndex = 17;
-            this.textboxHausnummer.TextChanged += new System.EventHandler(this.textboxHausnummer_TextChanged);
             // 
             // textboxVorname
             // 
@@ -247,7 +246,6 @@ namespace GUI_Main
             this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 22;
             this.label2.Text = "Passwort";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textboxPasswort
             // 
@@ -256,7 +254,6 @@ namespace GUI_Main
             this.textboxPasswort.Name = "textboxPasswort";
             this.textboxPasswort.Size = new System.Drawing.Size(115, 20);
             this.textboxPasswort.TabIndex = 23;
-            this.textboxPasswort.TextChanged += new System.EventHandler(this.textPasswort_TextChanged);
             // 
             // Form1
             // 
