@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("Unittest")]
 namespace GUI_Main
 {
     public partial class Form1 : Form, GUI_Main.IModel.IModel
