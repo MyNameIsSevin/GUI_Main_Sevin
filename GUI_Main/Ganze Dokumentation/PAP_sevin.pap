@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="AD8B59A826F07090">
-  <PROJECT FORMAT="1.00" NAME="Neues Projekt" AUTHOR="Sevin" CREATED="2021.11.15 18:08:49" MODIFIED="2021.11.21 09:36:51">
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="806C493A0CF7C1B4">
+  <PROJECT FORMAT="1.00" NAME="Neues Projekt" AUTHOR="Sevin" CREATED="2021.11.15 18:08:49" MODIFIED="2021.12.04 13:06:33">
     <DIAGRAMS>
       <DIAGRAM FORMAT="1.00" ID="0" NAME="void ändern Kunde(Geänderter Kunde)" CREATED="2021.11.15 18:09:08" MODIFIED="2021.11.21 09:21:53">
         <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="13">
@@ -298,6 +298,42 @@
           <CONNECTION FORMAT="1.00" ID="28" FROM="25" TO="27" TEXT="" />
           <CONNECTION FORMAT="1.00" ID="29" FROM="27" TO="8" TEXT="" />
           <CONNECTION FORMAT="1.00" ID="31" FROM="30" TO="2" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="3" NAME="void ()getKunde INT (Kunde bekommen)" CREATED="2021.12.04 12:59:24" MODIFIED="2021.12.04 12:59:24">
+        <LAYOUT FORMAT="1.00" COLUMNS="1" ROWS="5">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[void ()getKunde INT (Kunde bekommen)]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[XML-Datei im Model aufrufen]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[mit ,,get" Methode die Kundenliste in das Form1 bringen]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="2" TEXT="" />
         </CONNECTIONS>
       </DIAGRAM>
     </DIAGRAMS>
