@@ -1,28 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Kundenliste>
   <Kunde>
-    <Kundennummer>1</Kundennummer>
-    <name>Schneider</name>
-    <vorname>Aaron</vorname>
-    <straße>Oerschbachstraße</straße>
-    <hausnummer>75</hausnummer>
-    <ort>Düsseldorf</ort>
-    <postleitzahl>405890</postleitzahl>
-    <email>Ayoboxtalleweg@gmail.com</email>
-    <passwort>FarmingSimulator4live</passwort>
-  </Kunde>
-  <Kunde>
-    <Kundennummer>2</Kundennummer>
-    <name>Nagy</name>
-    <vorname>Kristof</vorname>
-    <straße>Oerschbachstraße</straße>
-    <hausnummer>150</hausnummer>
-    <ort>Düsseldorf</ort>
-    <postleitzahl>40591</postleitzahl>
-    <email>Kristofhackalleweg@gmail.com</email>
-    <passwort>R6forlive</passwort>
-  </Kunde>
-  <Kunde>
     <Kundennummer>7</Kundennummer>
     <name>Hörz</name>
     <vorname>Sevin</vorname>
@@ -65,5 +43,82 @@
     <postleitzahl>01067</postleitzahl>
     <email>Robertsammeltalleweg@gmail.com</email>
     <passwort>Wievielistdeinesammlungwert?</passwort>
+  </Kunde>
+  <Kunde>
+    <Kundennummer>55</Kundennummer>
+    <name>Nameanonym1</name>
+    <vorname>Vornameanonym1</vorname>
+    <straße>Straßeunbekannt1</straße>
+    <hausnummer>HausnummerVerborgen1</hausnummer>
+    <postleitzahl>453531</postleitzahl>
+    <ort>Ortversteckt1</ort>
+    <email>MEINEEMAILSISCHER@gmail.com1</email>
+    <passwort>MEINEPASSWORTSISCHER1</passwort>
+  </Kunde>
+  <Kunde>
+    <Kundennummer>55</Kundennummer>
+    <name>Nameanonym1</name>
+    <vorname>Vornameanonym1</vorname>
+    <straße>Straßeunbekannt1</straße>
+    <hausnummer>HausnummerVerborgen1</hausnummer>
+    <postleitzahl>453531</postleitzahl>
+    <ort>Ortversteckt1</ort>
+    <email>MEINEEMAILSISCHER@gmail.com1</email>
+    <passwort>MEINEPASSWORTSISCHER1</passwort>
+  </Kunde>
+  <Kunde>
+    <Kundennummer>55</Kundennummer>
+    <name>Nameanonym1</name>
+    <vorname>Vornameanonym1</vorname>
+    <straße>Straßeunbekannt1</straße>
+    <hausnummer>HausnummerVerborgen1</hausnummer>
+    <postleitzahl>453531</postleitzahl>
+    <ort>Ortversteckt1</ort>
+    <email>MEINEEMAILSISCHER@gmail.com1</email>
+    <passwort>MEINEPASSWORTSISCHER1</passwort>
+  </Kunde>
+  <Kunde>
+    <Kundennummer>55</Kundennummer>
+    <name>Nameanonym1</name>
+    <vorname>Vornameanonym1</vorname>
+    <straße>Straßeunbekannt1</straße>
+    <hausnummer>HausnummerVerborgen1</hausnummer>
+    <postleitzahl>453531</postleitzahl>
+    <ort>Ortversteckt1</ort>
+    <email>MEINEEMAILSISCHER@gmail.com1</email>
+    <passwort>MEINEPASSWORTSISCHER1</passwort>
+  </Kunde>
+  <Kunde>
+    <Kundennummer>55</Kundennummer>
+    <name>Nameanonym1</name>
+    <vorname>Vornameanonym1</vorname>
+    <straße>Straßeunbekannt1</straße>
+    <hausnummer>HausnummerVerborgen1</hausnummer>
+    <postleitzahl>453531</postleitzahl>
+    <ort>Ortversteckt1</ort>
+    <email>MEINEEMAILSISCHER@gmail.com1</email>
+    <passwort>MEINEPASSWORTSISCHER1</passwort>
+  </Kunde>
+  <Kunde>
+    <Kundennummer>55</Kundennummer>
+    <name>Nameanonym1</name>
+    <vorname>Vornameanonym1</vorname>
+    <straße>Straßeunbekannt1</straße>
+    <hausnummer>HausnummerVerborgen1</hausnummer>
+    <postleitzahl>453531</postleitzahl>
+    <ort>Ortversteckt1</ort>
+    <email>MEINEEMAILSISCHER@gmail.com1</email>
+    <passwort>MEINEPASSWORTSISCHER1</passwort>
+  </Kunde>
+  <Kunde>
+    <Kundennummer>55</Kundennummer>
+    <name>Nameanonym</name>
+    <vorname>Vornameanonym</vorname>
+    <straße>Straßeunbekannt</straße>
+    <hausnummer>HausnummerVerborgen</hausnummer>
+    <postleitzahl>45353</postleitzahl>
+    <ort>Ortversteckt</ort>
+    <email>MEINEEMAILSISCHER@gmail.com</email>
+    <passwort>MEINEPASSWORTSISCHER</passwort>
   </Kunde>
 </Kundenliste>
