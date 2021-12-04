@@ -152,11 +152,11 @@ namespace Unittest
                 ) == null
             );
         }
-        [TestMethod]
-        public void Testgetkunde()
-        {
-            XDocument doc = XDocument.Load(_path);
-            Assert.IsTrue(false);
-        }
+        //[TestMethod] |Not implemented|
+        //public void Testgetkunde()
+        //{
+        //    XDocument doc = XDocument.Load(_path);
+        //    Assert.IsTrue(false);
+        //}
     }
 }
