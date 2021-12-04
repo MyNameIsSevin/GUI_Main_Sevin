@@ -1,17 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Kundenliste>
   <Kunde>
-    <Kundennummer>7</Kundennummer>
-    <name>Hörz</name>
-    <vorname>Sevin</vorname>
-    <straße>Oerschbachstraße</straße>
-    <hausnummer>140/142</hausnummer>
-    <ort>Düsseldorf</ort>
-    <postleitzahl>40589</postleitzahl>
-    <email>Sevinisstalleweg@gmail.com</email>
-    <passwort>RedfoxHD13234</passwort>
-  </Kunde>
-  <Kunde>
     <Kundennummer>49</Kundennummer>
     <name>Alma</name>
     <vorname>Almann</vorname>
@@ -43,6 +32,28 @@
     <postleitzahl>01067</postleitzahl>
     <email>Robertsammeltalleweg@gmail.com</email>
     <passwort>Wievielistdeinesammlungwert?</passwort>
+  </Kunde>
+  <Kunde>
+    <Kundennummer>55</Kundennummer>
+    <name>Nameanonym1</name>
+    <vorname>Vornameanonym1</vorname>
+    <straße>Straßeunbekannt1</straße>
+    <hausnummer>HausnummerVerborgen1</hausnummer>
+    <postleitzahl>453531</postleitzahl>
+    <ort>Ortversteckt1</ort>
+    <email>MEINEEMAILSISCHER@gmail.com1</email>
+    <passwort>MEINEPASSWORTSISCHER1</passwort>
+  </Kunde>
+  <Kunde>
+    <Kundennummer>55</Kundennummer>
+    <name>Nameanonym1</name>
+    <vorname>Vornameanonym1</vorname>
+    <straße>Straßeunbekannt1</straße>
+    <hausnummer>HausnummerVerborgen1</hausnummer>
+    <postleitzahl>453531</postleitzahl>
+    <ort>Ortversteckt1</ort>
+    <email>MEINEEMAILSISCHER@gmail.com1</email>
+    <passwort>MEINEPASSWORTSISCHER1</passwort>
   </Kunde>
   <Kunde>
     <Kundennummer>55</Kundennummer>

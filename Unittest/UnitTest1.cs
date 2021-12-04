@@ -156,6 +156,7 @@ namespace Unittest
         public void Testgetkunde()
         {
             XDocument doc = XDocument.Load(_path);
+            Assert.IsTrue(false);
         }
     }
 }
