@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
-namespace GUI_Main
+namespace HHBK_Chemicals_ERP_CS
 {
-    public partial class Form1 : Form, GUI_Main.IModel.IModel
+    public partial class Form1 : Form, HHBK_Chemicals_ERP_CS.IModel.IModel
     {
         private readonly string _path;
         List<Kunde> IModel.IModel.Kunden => throw new NotImplementedException();
@@ -183,14 +183,14 @@ namespace GUI_Main
             throw new NotImplementedException();
         }
 
-        Kunde IModel.IModel.getKunde(int kundennummer)
-        {
-            throw new NotImplementedException();
-        }
-
         private void textboxHausnummer_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        Kunde IModel.IModel.KundeGet(Kunde kunde)
+        {
+            throw new NotImplementedException();
         }
     }
 }

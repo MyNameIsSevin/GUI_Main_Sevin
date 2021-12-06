@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace GUI_Main.Model
+namespace HHBK_Chemicals_ERP_CS.Model
 {
-    class Model:GUI_Main.IModel.IModel
+    class Model:HHBK_Chemicals_ERP_CS.IModel.IModel
     {
         XDocument doc = XDocument.Load("KundenlisteXML.xml");
 
@@ -25,7 +25,7 @@ namespace GUI_Main.Model
             throw new NotImplementedException();
         }
 
-        Kunde IModel.IModel.getKunde(int kundennummer)
+        Kunde IModel.IModel.KundeGet(Kunde kunde)
         {
             throw new NotImplementedException();
         }

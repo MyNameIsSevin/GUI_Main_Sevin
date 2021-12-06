@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GUI_Main
+namespace HHBK_Chemicals_ERP_CS
 {
     interface IKundenliste
     {
@@ -12,6 +12,6 @@ namespace GUI_Main
         void alter(Kunde kunde);
         void delete(Kunde kunde);
         void save(Kunde kunde);
-        Kunde getKunde(int kundennummer);
+        Kunde KundeGet(Kunde kunde);
     }
 }

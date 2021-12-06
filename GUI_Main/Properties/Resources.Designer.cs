@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace GUI_Main.Properties
+namespace HHBK_Chemicals_ERP_CS.Properties
 {
     /// <summary>
     ///   Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.

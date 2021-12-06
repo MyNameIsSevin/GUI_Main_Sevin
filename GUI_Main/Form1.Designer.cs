@@ -1,5 +1,5 @@
 ﻿
-namespace GUI_Main
+namespace HHBK_Chemicals_ERP_CS
 {
     partial class Form1
     {

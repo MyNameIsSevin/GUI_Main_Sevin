@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI_Main
+namespace HHBK_Chemicals_ERP_CS
 {
     static class Program
     {

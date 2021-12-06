@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace GUI_Main.IModel
+namespace HHBK_Chemicals_ERP_CS.IModel
 {
     interface IModel
     {
@@ -13,7 +13,7 @@ namespace GUI_Main.IModel
         void alter(Kunde kunde);
         void delete(Kunde kunde);
         void save(Kunde kunde);
-        Kunde getKunde(int kundennummer);
+        Kunde KundeGet(Kunde kunde);
 
         XDocument doc { get; set; }
     }    
